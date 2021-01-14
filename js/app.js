@@ -4,9 +4,8 @@ console.log('Howdy!');
 // Ask the User their name through a prompt
 // Display that name back to the user through a custom greeting welcoming them to your site.
 
-var username = prompt('Hello! What\'s your name?');
-alert('Lorem 0 ' + username + ' Ipsum 0');
-
+var username = prompt('Hello. What\'s your name?');
+alert('Welcome, ' + username + ', to a snippet of my life.');
 
 // Prompt the user a total of exactly five yes or no questions.
 // The user input for the answer must accept either y/n or yes/no responses while taking into consideration case sensitivity
@@ -26,7 +25,6 @@ if (questionOne === 'YES' || questionOne === 'Y') {
 }
 
 
-// alert('Lorem 1 ' + questionOne + ' Ipsum 1');
 
 // var questionTwo = prompt('Question 2?').toUpperCase;
 // alert('Lorem 2 ' + questionTwo + ' Ipsum 2');
