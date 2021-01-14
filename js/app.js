@@ -25,24 +25,54 @@ if (questionOne === 'YES' || questionOne === 'Y') {
 }
 
 
+var questionTwo = prompt('Question 2?').toUpperCase();
 
-// var questionTwo = prompt('Question 2?').toUpperCase;
-// alert('Lorem 2 ' + questionTwo + ' Ipsum 2');
-
-// var questionThree = prompt('Question 3?').toUpperCase;
-// alert('Lorem 3 ' + questionThree + ' Ipsum 3');
-
-// var questionFour = prompt('Question 4?').toUpperCase;
-// alert('Lorem 4 ' + questionFour + ' Ipsum 4');
-
-// var questionFive = prompt('Question 5?').toUpperCase;
-// alert('Lorem 4 ' + questionFive + ' Ipsum 4');
+if (questionTwo === 'YES' || questionTwo === 'Y') {
+  // console.log('I feel it...');
+  alert('I feel it...');
+} else if (questionTwo === 'NO' || questionTwo === 'N') {
+  alert('I see, but no.');
+} else {
+  alert('Unfortunate.');
+}
 
 
-// if(questionOne === 'yes' || questionOne === 'y') {
-//   // console.log('you are correct');
-//   alert('Nice.');
-// }
+var questionThree = prompt('Question 2?').toUpperCase();
 
-// Display the user’s name back to them in your final message to the user.
+if (questionThree === 'YES' || questionThree === 'Y') {
+  // console.log('I feel it...');
+  alert('I feel it...');
+} else if (questionThree === 'NO' || questionThree === 'N') {
+  alert('I see, but no.');
+} else {
+  alert('Unfortunate.');
+}
+
+
+var questionFour = prompt('Question 2?').toUpperCase();
+
+if (questionFour === 'YES' || questionFour === 'Y') {
+  // console.log('I feel it...');
+  alert('I feel it...');
+} else if (questionFour === 'NO' || questionFour === 'N') {
+  alert('I see, but no.');
+} else {
+  alert('Unfortunate.');
+}
+
+
+var questionFive = prompt('Question 2?').toUpperCase();
+
+if (questionFive === 'YES' || questionFive === 'Y') {
+  // console.log('Unfortunate, ' + username + '.');
+  alert('Unfortunate, ' + username + '.');
+} else if (questionFive === 'NO' || questionFive === 'N') {
+  // console.log('Unfortunate, ' + username + '.');
+  alert('Unfortunate, ' + username + '.');
+} else {
+  // console.log('Unfortunate, ' + username + '.');
+  alert('Unfortunate, ' + username + '.');
+}
+
+// ^^^Display the user’s name back to them in your final message to the user.
 
