@@ -11,49 +11,49 @@ alert('Welcome, ' + username + ', to a snippet of my life.');
 // The user input for the answer must accept either y/n or yes/no responses while taking into consideration case sensitivity
 
 
-var questionOne = prompt('Do you like dogs?').toUpperCase();
+var questionOne = prompt('Do I like dogs?').toUpperCase();
 
 if (questionOne === 'YES' || questionOne === 'Y') {
   // console.log('Very Good.');
-  alert('Awesome.');
+  alert('Well done.');
 } else if (questionOne === 'NO' || questionOne === 'N') {
   // console.log('Hmm...');
-  alert('Noted.');
+  alert('Incorrect.');
 } else {
   // console.log('That\'s too bad');
   alert('Ok, that doesn\'t make sense.');
 }
 
 
-var questionTwo = prompt('Do you like piña coladas?').toUpperCase();
+var questionTwo = prompt('Do I like piña coladas?').toUpperCase();
 
 if (questionTwo === 'YES' || questionTwo === 'Y') {
   // console.log('I feel it...');
-  alert('I feel it...');
+  alert('Not really');
 } else if (questionTwo === 'NO' || questionTwo === 'N') {
-  alert('I see, but no.');
+  alert('Correct.');
 } else {
-  alert('Unfortunate.');
+  alert('Umm...');
 }
 
 
-var questionThree = prompt('Do you use Q Tips?').toUpperCase();
+var questionThree = prompt('Do I prefer electric razors?').toUpperCase();
 
 if (questionThree === 'YES' || questionThree === 'Y') {
   // console.log('I feel it...');
-  alert('K, just be careful.');
+  alert('Totally, if I watch a good review beforehand.');
 } else if (questionThree === 'NO' || questionThree === 'N') {
-  alert('Smart.');
+  alert('I actually do, but with other things I\'m more on the analog side of life.');
 } else {
   alert('I mean...');
 }
 
 
-var questionFour = prompt('Are you a gamer?').toUpperCase();
+var questionFour = prompt('Am I a gamer?').toUpperCase();
 
 if (questionFour === 'YES' || questionFour === 'Y') {
   // console.log('I feel it...');
-  alert('I feel it...');
+  alert('+10,000 EXP');
 } else if (questionFour === 'NO' || questionFour === 'N') {
   alert('Dude. Get with it.');
 } else {
@@ -61,7 +61,7 @@ if (questionFour === 'YES' || questionFour === 'Y') {
 }
 
 
-var questionFive = prompt('Are you into politics?').toUpperCase();
+var questionFive = prompt('Am I into politics?').toUpperCase();
 
 if (questionFive === 'YES' || questionFive === 'Y') {
   // console.log('Unfortunate, ' + username + '.');
