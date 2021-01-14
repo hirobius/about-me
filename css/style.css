@@ -4,3 +4,13 @@ body {
   border: 1px blueviolet;
   margin: auto;
 }
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+  list-style-position: inside;
+    
+}
