@@ -11,21 +11,21 @@ alert('Welcome, ' + username + ', to a snippet of my life.');
 // The user input for the answer must accept either y/n or yes/no responses while taking into consideration case sensitivity
 
 
-var questionOne = prompt('Question 1?').toUpperCase();
+var questionOne = prompt('Do you like dogs?').toUpperCase();
 
 if (questionOne === 'YES' || questionOne === 'Y') {
   // console.log('Very Good.');
-  alert('Very Good.');
+  alert('Awesome.');
 } else if (questionOne === 'NO' || questionOne === 'N') {
   // console.log('Hmm...');
-  alert('Hmm...');
+  alert('Noted.');
 } else {
   // console.log('That\'s too bad');
-  alert('That\'s too bad...');
+  alert('Ok, that doesn\'t make sense.');
 }
 
 
-var questionTwo = prompt('Question 2?').toUpperCase();
+var questionTwo = prompt('Do you like piña coladas?').toUpperCase();
 
 if (questionTwo === 'YES' || questionTwo === 'Y') {
   // console.log('I feel it...');
@@ -37,31 +37,31 @@ if (questionTwo === 'YES' || questionTwo === 'Y') {
 }
 
 
-var questionThree = prompt('Question 2?').toUpperCase();
+var questionThree = prompt('Do you use Q Tips?').toUpperCase();
 
 if (questionThree === 'YES' || questionThree === 'Y') {
   // console.log('I feel it...');
-  alert('I feel it...');
+  alert('K, just be careful.');
 } else if (questionThree === 'NO' || questionThree === 'N') {
-  alert('I see, but no.');
+  alert('Smart.');
 } else {
-  alert('Unfortunate.');
+  alert('I mean...');
 }
 
 
-var questionFour = prompt('Question 2?').toUpperCase();
+var questionFour = prompt('Are you a gamer?').toUpperCase();
 
 if (questionFour === 'YES' || questionFour === 'Y') {
   // console.log('I feel it...');
   alert('I feel it...');
 } else if (questionFour === 'NO' || questionFour === 'N') {
-  alert('I see, but no.');
+  alert('Dude. Get with it.');
 } else {
-  alert('Unfortunate.');
+  alert('Moving on..');
 }
 
 
-var questionFive = prompt('Question 2?').toUpperCase();
+var questionFive = prompt('Are you into politics?').toUpperCase();
 
 if (questionFive === 'YES' || questionFive === 'Y') {
   // console.log('Unfortunate, ' + username + '.');
@@ -75,4 +75,3 @@ if (questionFive === 'YES' || questionFive === 'Y') {
 }
 
 // ^^^Display the user’s name back to them in your final message to the user.
-
