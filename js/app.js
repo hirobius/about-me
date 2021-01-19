@@ -81,7 +81,6 @@ if (quizFive === 'YES' || quizFive === 'Y') {
 } else if (quizFive === 'NO' || quizFive === 'N') {
   // console.log('Unfortunate, ' + username + '.');
   alert('Unfortunate, ' + username + '.');
-  score++;
 } else {
   // console.log('Unfortunate, ' + username + '.');
   alert('Unfortunate, ' + username + '.');
@@ -98,7 +97,7 @@ if (quizFive === 'YES' || quizFive === 'Y') {
 
 for (var i = 0; i < 4; i++) {
   var fingers = 7;
-  guessCounter = 4;
+  var guessCounter = 4;
   var fingerQuestion = 'How many fingers am I holding up?';
   var guessFingers = +prompt(fingerQuestion + ` You have ${guessCounter - i} guesses remaining.`);
   if (guessFingers === fingers) {
@@ -126,43 +125,16 @@ alert('The correct answer was indeed 7.');
 
 
 var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
-var guessCounter = 6;
+guessCounter = 6;
 for (var j = 0; j < guessCounter; j++) {
   var guess = prompt(`Name one of my favorite colors. ${guessCounter - j} guesses remaining.`).toUpperCase();
-  if (guess === colors[0]) {
+  if (guess === colors[0] || guess === colors[1] || guess === colors[2] || guess === colors[3] || guess === colors[4] || guess === colors[5] || guess === colors[6]) {
     alert('Good Job!');
     score++;
     break;
-  } else if (guess === colors[1]) {
-    alert('Good Job!');
-    score++;
-    break;
-  } else if (guess === colors[2]) {
-    alert('Good Job!');
-    score++;
-    break;
-  } else if (guess === colors[3]) {
-    alert('Good Job!');
-    score++;
-    break;
-  } else if (guess === colors[4]) {
-    alert('Good Job!');
-    score++;
-    break;
-  } else if (guess === colors[5]) {
-    alert('Good Job!');
-    score++;
-    break;
-  } else if (guess === colors[6]) {
-    alert('Good Job!');
-    score++;
-    break;
+  } else {
+    alert('Sorry.');
   }
 }
-
 alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
 alert('Your final score is: ' + score + '/7.');
-
-
-
-// // Make sure to update the .readme file at the end of this lab
