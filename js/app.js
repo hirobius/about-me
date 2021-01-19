@@ -98,8 +98,9 @@ if (quizFive === 'YES' || quizFive === 'Y') {
 
 for (var i = 0; i < 4; i++) {
   var fingers = 7;
+  guessCounter = 4;
   var fingerQuestion = 'How many fingers am I holding up?';
-  var guessFingers = +prompt(fingerQuestion + ` You have ${!i + 3} guesses remaining.`);
+  var guessFingers = +prompt(fingerQuestion + ` You have ${guessCounter - i} guesses remaining.`);
   if (guessFingers === fingers) {
     alert('Excellent.');
     score++;
@@ -156,9 +157,10 @@ for (var j = 0; j < guessCounter; j++) {
     alert('Good Job!');
     score++;
     break;
-  } else alert('Please try again.');
+  }
 }
 
+alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
 alert('Your final score is: ' + score + '/7.');
 
 
