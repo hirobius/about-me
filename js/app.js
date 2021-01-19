@@ -133,51 +133,35 @@ for (var j = 0; j < guessCounter; j++) {
     alert('Good Job!');
     score++;
     break;
-  }
+  } else if (guess === colors[1]) {
+    alert('Good Job!');
+    score++;
+    break;
+  } else if (guess === colors[2]) {
+    alert('Good Job!');
+    score++;
+    break;
+  } else if (guess === colors[3]) {
+    alert('Good Job!');
+    score++;
+    break;
+  } else if (guess === colors[4]) {
+    alert('Good Job!');
+    score++;
+    break;
+  } else if (guess === colors[5]) {
+    alert('Good Job!');
+    score++;
+    break;
+  } else if (guess === colors[6]) {
+    alert('Good Job!');
+    score++;
+    break;
+  } else alert('Please try again.');
 }
-
 
 alert('Your final score is: ' + score + '/7.');
 
 
 
-
-//     // while loop conversion solution
-
-
-
-//     var answerCorrectly = false;
-//     var numberOfGuesses = 6;
-//     var myFavoriteAnimals = ['Lorem 1', 'Lorem 2', 'Lorem 3', 'Lorem 4'];
-//     //console.log(myFavoriteAnimals);
-//     while (numberOfGuesses && !answerCorrectly) {
-      // var guessMyFavorites = prompt('What are my Favorite animals you have ${numberOfGuesses - j} guesses remaining').toUpperCase();
-//       for (var k = 0; k < myFavoriteAnimals.length; k++) {
-//         if (guessMyFavorites === myFavoriteAnimals[k]) {
-//           alert('Good Job!');
-//           answerCorrectly = true;
-//           score++;
-//           break;
-//         }
-
-//       }
-//       if (answerCorrectly) {
-//         break;
-//         numberOfGuesses--;
-//       }
-
-//       alert('My favorite animals are');
-//       console.log(score);
-//       alert('Good job' + username + 'you did it!' + 'You got ' + score + 'correct answers!');
-//     }
-
 // // Make sure to update the .readme file at the end of this lab
-// // Update your Console Logs as well
-
-
-
-// // // Stretch Goals : 
-// // After completing all of the requirements listed above, you may optionally challenge yourself further by implementing some or all of the following into your application.
-
-// // Attempt to make your code more DRY by putting all of the questions, answers, and responses to the first five yes/no questions into arrays (or even one huge multidimensional array), and modifying the game logic such that a ‘for’ loop will control the flow from question to question.
-// // Make the number-guessing question use a random number as its correct answer
