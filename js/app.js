@@ -85,7 +85,6 @@ if (quizFive === 'YES' || quizFive === 'Y') {
 } else {
   // console.log('Unfortunate, ' + username + '.');
   alert('Unfortunate, ' + username + '.');
-  score++;
 }
 
 // ^^^ Display the user’s name back to them in your final message
