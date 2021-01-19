@@ -92,22 +92,15 @@ if (quizFive === 'YES' || quizFive === 'Y') {
 
 
 
-
-
 // The following is a 6th question that takes in a numeric input by prompting the user to guess a number
 // The alert given back is an indicator on if the number is too high or too low
 // There should be exactly 4 guesses allowed
 // After all eamples have been exhausted, we must alert the user the correct answer, (Consider using an loop of some sort)
 
-
-
-
-
-
 for (var i = 0; i < 4; i++) {
   var fingers = 7;
   var fingerQuestion = 'How many fingers am I holding up?';
-  var guessFingers = prompt(fingerQuestion + ' You have 4 guesses total.');
+  var guessFingers = +prompt(fingerQuestion + ` You have ${!i + 3} guesses remaining.`);
   if (guessFingers === fingers) {
     alert('Excellent.');
     score++;
@@ -121,69 +114,30 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-prompt('Your final score is: ' + score + '.');
+alert('The correct answer was indeed 7.');
 
 
+// The last question, #7 will have multiple correct answers possible that are stored in an array
+// There will be 6 guesses allowed
+// The guesses will end once the user guesses a correct answer or they run out of attempts.
+// Display all the possible correct answers to the user.
+// Consider using a loop of some sort for this question.
+// At the very end, the user should be shown how many answers they got right out of 7. Keep track of them the whole time
 
 
+var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
+var guessCounter = 6;
+for (var j = 0; j < guessCounter; j++) {
+  var guess = prompt(`Name one of my favorite colors. ${guessCounter - j} guesses remaining.`).toUpperCase();
+  if (guess === colors[0]) {
+    alert('Good Job!');
+    score++;
+    break;
+  }
+}
 
 
-// for (var i = 0; i < 4; i++) {
-//   var guessCounter = 4;
-//   var fingers = 7;
-//   var fingerQuestion = 'How many fingers am I holding up?';
-//   var guessFingers = prompt(fingerQuestion + guessCounter + ' guesses remaining.');
-//   if (fingers === guessFingers) {
-//     score++;
-//     alert('Excellent.');
-//     break;
-//   } else if (i < 4 && guessFingers < fingers) {
-//     alert('Higher...');
-//     guessCounter--;
-//   } else if (i < 4 && guessFingers > fingers) {
-//     alert('Lower...');
-//     guessCounter--;
-//   } else if (i === 1) {
-//     alert('Last guess.');
-//     guessCounter--;
-//   }
-// }
-
-
-
-
-
-
-
-// // The last question, #7 will have multiple correct answers possible that are stored in an array
-// // There will be 6 guesses allowed
-// // The guesses will end once the user guesses a correct answer or they run out of attempts.
-// // Display all the possible correct answers to the user.
-// // Consider using a loop of some sort for this question.
-// // At the very end, the user should be shown how many answers they got right out of 7. Keep track of them the whole time
-
-// var answerCorrectly = false;
-// var numberOfGuesses = 6;
-// var myFavoriteAnimals = ['Lorem 1', 'Lorem 2', 'Lorem 3', 'Lorem 4'];
-// //console.log(myFavoriteAnimals);
-// for (var j = 0; j < numberOfGuesses; j++) {
-//   var guessMyFavorites = prompt('What are my Favorite animals you have ${numberOfGuesses - j} guesses remaining').toUpperCase();
-//   for (var k = 0; k < myFavoriteAnimals.length; k++) {
-//     if (guessMyFavorites === myFavoriteAnimals[k]) {
-//       alert('Good Job!');
-//       answerCorrectly = true;
-//       score++;
-//       break;
-//     }
-
-//   }
-//   if (answerCorrectly) {
-//     break;
-//   }
-// }
-
-
-
+alert('Your final score is: ' + score + '/7.');
 
 
 
@@ -197,7 +151,7 @@ prompt('Your final score is: ' + score + '.');
 //     var myFavoriteAnimals = ['Lorem 1', 'Lorem 2', 'Lorem 3', 'Lorem 4'];
 //     //console.log(myFavoriteAnimals);
 //     while (numberOfGuesses && !answerCorrectly) {
-//       var guessMyFavorites = prompt('What are my Favorite animals you have ${numberOfGuesses - j} guesses remaining').toUpperCase();
+      // var guessMyFavorites = prompt('What are my Favorite animals you have ${numberOfGuesses - j} guesses remaining').toUpperCase();
 //       for (var k = 0; k < myFavoriteAnimals.length; k++) {
 //         if (guessMyFavorites === myFavoriteAnimals[k]) {
 //           alert('Good Job!');
