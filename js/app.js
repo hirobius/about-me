@@ -126,15 +126,35 @@ alert('The correct answer was indeed 7.');
 
 var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
 guessCounter = 6;
-for (var j = 0; j < guessCounter; j++) {
-  var guess = prompt(`Name one of my favorite colors. ${guessCounter - j} guesses remaining.`).toUpperCase();
-  if (guess === colors[0] || guess === colors[1] || guess === colors[2] || guess === colors[3] || guess === colors[4] || guess === colors[5] || guess === colors[6]) {
-    alert('Good Job!');
-    score++;
+var correctAnswer = false;
+for (i = 0; i < guessCounter; i++) {
+  var guess = prompt(`Name one of my favorite colors. ${guessCounter - i} guesses remaining.`).toUpperCase();
+  for (var j = 0; j < colors.length; j++) {
+    if (guess === colors[j]) {
+      alert('Good job!');
+      score++;
+      correctAnswer = true;
+      break;
+    }
+  }
+  if (correctAnswer) {
     break;
   } else {
-    alert('Sorry.');
+    alert('Incorrect. Please try again.');
   }
 }
+
+
+// alternate || solution:
+
+// if (guess === colors[0] || guess === colors[1] || guess === colors[2] || guess === colors[3] || guess === colors[4] || guess === colors[5] || guess === colors[6]) {
+//   alert('Good Job!');
+//   score++;
+//   break;
+// } else {
+//   alert('Sorry.');
+// }
+
+
 alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
 alert('Your final score is: ' + score + '/7.');
