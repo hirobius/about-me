@@ -11,80 +11,90 @@ alert('Welcome, ' + username + ', to my life.');
 // Prompt the user a total of exactly five yes or no questions.
 // The user input for the answer must accept either y/n or yes/no responses while taking into consideration case sensitivity
 
+function questionOne() {
+  var quizOne = prompt('Do I like dogs?').toUpperCase();
 
-var quizOne = prompt('Do I like dogs?').toUpperCase();
-
-if (quizOne === 'YES' || quizOne === 'Y') {
-  // console.log('Well done.');
-  alert('Well done.');
-  score++;
-} else if (quizOne === 'NO' || quizOne === 'N') {
-  // console.log('Incorrect.');
-  alert('Incorrect.');
-} else {
-  // console.log('Ok, that doesn\'t make sense.');
-  alert('Ok, that doesn\'t make sense.');
+  if (quizOne === 'YES' || quizOne === 'Y') {
+    // console.log('Well done.');
+    alert('Well done.');
+    score++;
+  } else if (quizOne === 'NO' || quizOne === 'N') {
+    // console.log('Incorrect.');
+    alert('Incorrect.');
+  } else {
+    // console.log('Ok, that doesn\'t make sense.');
+    alert('Ok, that doesn\'t make sense.');
+  }
 }
+questionOne();
 
+function questionTwo() {
+  var quizTwo = prompt('Do I like piña coladas?').toUpperCase();
 
-var quizTwo = prompt('Do I like piña coladas?').toUpperCase();
-
-if (quizTwo === 'YES' || quizTwo === 'Y') {
-  // console.log('Not really');
-  alert('Not really');
-  score++;
-} else if (quizTwo === 'NO' || quizTwo === 'N') {
-  // console.log('Correct.');
-  alert('Correct.');
-} else {
-  // console.log('Umm...');
-  alert('Umm...');
+  if (quizTwo === 'YES' || quizTwo === 'Y') {
+    // console.log('Not really');
+    alert('Not really');
+    score++;
+  } else if (quizTwo === 'NO' || quizTwo === 'N') {
+    // console.log('Correct.');
+    alert('Correct.');
+  } else {
+    // console.log('Umm...');
+    alert('Umm...');
+  }
 }
+questionTwo();
 
+function questionThree() {
+  var quizThree = prompt('Do I prefer electric razors?').toUpperCase();
 
-var quizThree = prompt('Do I prefer electric razors?').toUpperCase();
-
-if (quizThree === 'YES' || quizThree === 'Y') {
-  // console.log('Totally, if I watch a good review beforehand.');
-  alert('Totally, if I watch a good review beforehand.');
-  score++;
-} else if (quizThree === 'NO' || quizThree === 'N') {
-  // console.log('I actually do, but with other things I\'m more on the analog side of life.');
-  alert('I actually do, but with other things I\'m more on the analog side of life.');
-} else {
-  // console.log('I mean...);
-  alert('I mean...');
+  if (quizThree === 'YES' || quizThree === 'Y') {
+    // console.log('Totally, if I watch a good review beforehand.');
+    alert('Totally, if I watch a good review beforehand.');
+    score++;
+  } else if (quizThree === 'NO' || quizThree === 'N') {
+    // console.log('I actually do, but with other things I\'m more on the analog side of life.');
+    alert('I actually do, but with other things I\'m more on the analog side of life.');
+  } else {
+    // console.log('I mean...);
+    alert('I mean...');
+  }
 }
+questionThree();
 
+function questionFour() {
+  var quizFour = prompt('Am I a gamer?').toUpperCase();
 
-var quizFour = prompt('Am I a gamer?').toUpperCase();
-
-if (quizFour === 'YES' || quizFour === 'Y') {
-  // console.log('I feel it...');
-  alert('+10,000 EXP');
-  score++;
-} else if (quizFour === 'NO' || quizFour === 'N') {
-  // console.log('Dude. Get with it.');
-  alert('Dude. Get with it.');
-} else {
-  // console.log('Moving on..);
-  alert('Moving on..');
+  if (quizFour === 'YES' || quizFour === 'Y') {
+    // console.log('I feel it...');
+    alert('+10,000 EXP');
+    score++;
+  } else if (quizFour === 'NO' || quizFour === 'N') {
+    // console.log('Dude. Get with it.');
+    alert('Dude. Get with it.');
+  } else {
+    // console.log('Moving on..);
+    alert('Moving on..');
+  }
 }
+questionFour();
 
+function questionFive() {
+  var quizFive = prompt('Am I into politics?').toUpperCase();
 
-var quizFive = prompt('Am I into politics?').toUpperCase();
-
-if (quizFive === 'YES' || quizFive === 'Y') {
-  // console.log('Unfortunate, ' + username + '.');
-  alert('Unfortunate, ' + username + '.');
-  score++;
-} else if (quizFive === 'NO' || quizFive === 'N') {
-  // console.log('Unfortunate, ' + username + '.');
-  alert('Unfortunate, ' + username + '.');
-} else {
-  // console.log('Unfortunate, ' + username + '.');
-  alert('Unfortunate, ' + username + '.');
+  if (quizFive === 'YES' || quizFive === 'Y') {
+    // console.log('Unfortunate, ' + username + '.');
+    alert('Unfortunate, ' + username + '.');
+    score++;
+  } else if (quizFive === 'NO' || quizFive === 'N') {
+    // console.log('Unfortunate, ' + username + '.');
+    alert('Unfortunate, ' + username + '.');
+  } else {
+    // console.log('Unfortunate, ' + username + '.');
+    alert('Unfortunate, ' + username + '.');
+  }
 }
+questionFive();
 
 // ^^^ Display the user’s name back to them in your final message
 
@@ -95,25 +105,27 @@ if (quizFive === 'YES' || quizFive === 'Y') {
 // There should be exactly 4 guesses allowed
 // After all eamples have been exhausted, we must alert the user the correct answer, (Consider using an loop of some sort)
 
-for (var i = 0; i < 4; i++) {
-  var fingers = 7;
-  var guessCounter = 4;
-  var fingerQuestion = 'How many fingers am I holding up?';
-  var guessFingers = +prompt(fingerQuestion + ` You have ${guessCounter - i} guesses remaining.`);
-  if (guessFingers === fingers) {
-    alert('Excellent.');
-    score++;
-    break;
-  } else if (i === 2) {
-    alert('Last guess.');
-  } else if (i < 3 && guessFingers < fingers) {
-    alert('Higher...');
-  } else if (i < 3 && guessFingers > fingers) {
-    alert('Lower...');
+function questionSix() {
+  for (var i = 0; i < 4; i++) {
+    var fingers = 7;
+    var guessCounter = 4;
+    var fingerQuestion = 'How many fingers am I holding up?';
+    var guessFingers = +prompt(fingerQuestion + ` You have ${guessCounter - i} guesses remaining.`);
+    if (guessFingers === fingers) {
+      alert('Excellent.');
+      score++;
+      break;
+    } else if (i === 2) {
+      alert('Last guess.');
+    } else if (i < 3 && guessFingers < fingers) {
+      alert('Higher...');
+    } else if (i < 3 && guessFingers > fingers) {
+      alert('Lower...');
+    }
   }
 }
-
-alert('The correct answer was indeed 7.');
+questionSix();
+alert('The correct answer was 7.');
 
 
 // The last question, #7 will have multiple correct answers possible that are stored in an array
@@ -123,27 +135,31 @@ alert('The correct answer was indeed 7.');
 // Consider using a loop of some sort for this question.
 // At the very end, the user should be shown how many answers they got right out of 7. Keep track of them the whole time
 
-
-var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
-guessCounter = 6;
-var correctAnswer = false;
-for (i = 0; i < guessCounter; i++) {
-  var guess = prompt(`Name one of my favorite colors. ${guessCounter - i} guesses remaining.`).toUpperCase();
-  for (var j = 0; j < colors.length; j++) {
-    if (guess === colors[j]) {
-      alert('Good job!');
-      score++;
-      correctAnswer = true;
+function questionSeven() {
+  var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
+  var guessCounter = 6;
+  var correctAnswer = false;
+  for (var i = 0; i < guessCounter; i++) {
+    var guess = prompt(`Name one of my favorite colors. ${guessCounter - i} guesses remaining.`).toUpperCase();
+    for (var j = 0; j < colors.length; j++) {
+      if (guess === colors[j]) {
+        alert('Good job!');
+        score++;
+        correctAnswer = true;
+        break;
+      }
+    }
+    if (correctAnswer) {
       break;
+    } else {
+      alert('Incorrect. Please try again.');
     }
   }
-  if (correctAnswer) {
-    break;
-  } else {
-    alert('Incorrect. Please try again.');
-  }
 }
+questionSeven();
 
+alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
+alert('Your final score is: ' + score + '/7.');
 
 // alternate || solution:
 
@@ -154,7 +170,3 @@ for (i = 0; i < guessCounter; i++) {
 // } else {
 //   alert('Sorry.');
 // }
-
-
-alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
-alert('Your final score is: ' + score + '/7.');
