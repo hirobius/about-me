@@ -45,20 +45,22 @@ function questionTwo() {
 }
 questionTwo();
 
-var quizThree = prompt('Do I prefer electric razors?').toUpperCase();
+function questionThree() {
+  var quizThree = prompt('Do I prefer electric razors?').toUpperCase();
 
-if (quizThree === 'YES' || quizThree === 'Y') {
-  // console.log('Totally, if I watch a good review beforehand.');
-  alert('Totally, if I watch a good review beforehand.');
-  score++;
-} else if (quizThree === 'NO' || quizThree === 'N') {
-  // console.log('I actually do, but with other things I\'m more on the analog side of life.');
-  alert('I actually do, but with other things I\'m more on the analog side of life.');
-} else {
-  // console.log('I mean...);
-  alert('I mean...');
+  if (quizThree === 'YES' || quizThree === 'Y') {
+    // console.log('Totally, if I watch a good review beforehand.');
+    alert('Totally, if I watch a good review beforehand.');
+    score++;
+  } else if (quizThree === 'NO' || quizThree === 'N') {
+    // console.log('I actually do, but with other things I\'m more on the analog side of life.');
+    alert('I actually do, but with other things I\'m more on the analog side of life.');
+  } else {
+    // console.log('I mean...);
+    alert('I mean...');
+  }
 }
-
+questionThree();
 
 var quizFour = prompt('Am I a gamer?').toUpperCase();
 
