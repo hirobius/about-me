@@ -28,20 +28,22 @@ function questionOne() {
 }
 questionOne();
 
-var quizTwo = prompt('Do I like piña coladas?').toUpperCase();
+function questionTwo() {
+  var quizTwo = prompt('Do I like piña coladas?').toUpperCase();
 
-if (quizTwo === 'YES' || quizTwo === 'Y') {
-  // console.log('Not really');
-  alert('Not really');
-  score++;
-} else if (quizTwo === 'NO' || quizTwo === 'N') {
-  // console.log('Correct.');
-  alert('Correct.');
-} else {
-  // console.log('Umm...');
-  alert('Umm...');
+  if (quizTwo === 'YES' || quizTwo === 'Y') {
+    // console.log('Not really');
+    alert('Not really');
+    score++;
+  } else if (quizTwo === 'NO' || quizTwo === 'N') {
+    // console.log('Correct.');
+    alert('Correct.');
+  } else {
+    // console.log('Umm...');
+    alert('Umm...');
+  }
 }
-
+questionTwo();
 
 var quizThree = prompt('Do I prefer electric razors?').toUpperCase();
 
