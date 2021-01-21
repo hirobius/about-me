@@ -105,25 +105,27 @@ questionFive();
 // There should be exactly 4 guesses allowed
 // After all eamples have been exhausted, we must alert the user the correct answer, (Consider using an loop of some sort)
 
-for (var i = 0; i < 4; i++) {
-  var fingers = 7;
-  var guessCounter = 4;
-  var fingerQuestion = 'How many fingers am I holding up?';
-  var guessFingers = +prompt(fingerQuestion + ` You have ${guessCounter - i} guesses remaining.`);
-  if (guessFingers === fingers) {
-    alert('Excellent.');
-    score++;
-    break;
-  } else if (i === 2) {
-    alert('Last guess.');
-  } else if (i < 3 && guessFingers < fingers) {
-    alert('Higher...');
-  } else if (i < 3 && guessFingers > fingers) {
-    alert('Lower...');
+function questionSix() {
+  for (var i = 0; i < 4; i++) {
+    var fingers = 7;
+    var guessCounter = 4;
+    var fingerQuestion = 'How many fingers am I holding up?';
+    var guessFingers = +prompt(fingerQuestion + ` You have ${guessCounter - i} guesses remaining.`);
+    if (guessFingers === fingers) {
+      alert('Excellent.');
+      score++;
+      break;
+    } else if (i === 2) {
+      alert('Last guess.');
+    } else if (i < 3 && guessFingers < fingers) {
+      alert('Higher...');
+    } else if (i < 3 && guessFingers > fingers) {
+      alert('Lower...');
+    }
   }
 }
-
-alert('The correct answer was indeed 7.');
+questionSix();
+alert('The correct answer was 7.');
 
 
 // The last question, #7 will have multiple correct answers possible that are stored in an array
@@ -135,9 +137,9 @@ alert('The correct answer was indeed 7.');
 
 
 var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
-guessCounter = 6;
+var guessCounter = 6;
 var correctAnswer = false;
-for (i = 0; i < guessCounter; i++) {
+for (var i = 0; i < guessCounter; i++) {
   var guess = prompt(`Name one of my favorite colors. ${guessCounter - i} guesses remaining.`).toUpperCase();
   for (var j = 0; j < colors.length; j++) {
     if (guess === colors[j]) {
@@ -154,6 +156,8 @@ for (i = 0; i < guessCounter; i++) {
   }
 }
 
+alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
+alert('Your final score is: ' + score + '/7.');
 
 // alternate || solution:
 
@@ -164,7 +168,3 @@ for (i = 0; i < guessCounter; i++) {
 // } else {
 //   alert('Sorry.');
 // }
-
-
-alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
-alert('Your final score is: ' + score + '/7.');
