@@ -11,21 +11,22 @@ alert('Welcome, ' + username + ', to my life.');
 // Prompt the user a total of exactly five yes or no questions.
 // The user input for the answer must accept either y/n or yes/no responses while taking into consideration case sensitivity
 
+function questionOne() {
+  var quizOne = prompt('Do I like dogs?').toUpperCase();
 
-var quizOne = prompt('Do I like dogs?').toUpperCase();
-
-if (quizOne === 'YES' || quizOne === 'Y') {
-  // console.log('Well done.');
-  alert('Well done.');
-  score++;
-} else if (quizOne === 'NO' || quizOne === 'N') {
-  // console.log('Incorrect.');
-  alert('Incorrect.');
-} else {
-  // console.log('Ok, that doesn\'t make sense.');
-  alert('Ok, that doesn\'t make sense.');
+  if (quizOne === 'YES' || quizOne === 'Y') {
+    // console.log('Well done.');
+    alert('Well done.');
+    score++;
+  } else if (quizOne === 'NO' || quizOne === 'N') {
+    // console.log('Incorrect.');
+    alert('Incorrect.');
+  } else {
+    // console.log('Ok, that doesn\'t make sense.');
+    alert('Ok, that doesn\'t make sense.');
+  }
 }
-
+questionOne();
 
 var quizTwo = prompt('Do I like piña coladas?').toUpperCase();
 
