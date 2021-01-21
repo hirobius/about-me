@@ -135,26 +135,28 @@ alert('The correct answer was 7.');
 // Consider using a loop of some sort for this question.
 // At the very end, the user should be shown how many answers they got right out of 7. Keep track of them the whole time
 
-
-var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
-var guessCounter = 6;
-var correctAnswer = false;
-for (var i = 0; i < guessCounter; i++) {
-  var guess = prompt(`Name one of my favorite colors. ${guessCounter - i} guesses remaining.`).toUpperCase();
-  for (var j = 0; j < colors.length; j++) {
-    if (guess === colors[j]) {
-      alert('Good job!');
-      score++;
-      correctAnswer = true;
+function questionSeven() {
+  var colors = ['WHITE', 'BLUE', 'BLACK', 'RED', 'GREEN', 'YELLOW', 'PURPLE'];
+  var guessCounter = 6;
+  var correctAnswer = false;
+  for (var i = 0; i < guessCounter; i++) {
+    var guess = prompt(`Name one of my favorite colors. ${guessCounter - i} guesses remaining.`).toUpperCase();
+    for (var j = 0; j < colors.length; j++) {
+      if (guess === colors[j]) {
+        alert('Good job!');
+        score++;
+        correctAnswer = true;
+        break;
+      }
+    }
+    if (correctAnswer) {
       break;
+    } else {
+      alert('Incorrect. Please try again.');
     }
   }
-  if (correctAnswer) {
-    break;
-  } else {
-    alert('Incorrect. Please try again.');
-  }
 }
+questionSeven();
 
 alert('My favorite colors are WHITE, BLUE, BLACK, RED, GREEN, YELLOW and PURPLE.');
 alert('Your final score is: ' + score + '/7.');
