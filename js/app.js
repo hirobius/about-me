@@ -79,19 +79,22 @@ function questionFour() {
 }
 questionFour();
 
-var quizFive = prompt('Am I into politics?').toUpperCase();
+function questionFive() {
+  var quizFive = prompt('Am I into politics?').toUpperCase();
 
-if (quizFive === 'YES' || quizFive === 'Y') {
-  // console.log('Unfortunate, ' + username + '.');
-  alert('Unfortunate, ' + username + '.');
-  score++;
-} else if (quizFive === 'NO' || quizFive === 'N') {
-  // console.log('Unfortunate, ' + username + '.');
-  alert('Unfortunate, ' + username + '.');
-} else {
-  // console.log('Unfortunate, ' + username + '.');
-  alert('Unfortunate, ' + username + '.');
+  if (quizFive === 'YES' || quizFive === 'Y') {
+    // console.log('Unfortunate, ' + username + '.');
+    alert('Unfortunate, ' + username + '.');
+    score++;
+  } else if (quizFive === 'NO' || quizFive === 'N') {
+    // console.log('Unfortunate, ' + username + '.');
+    alert('Unfortunate, ' + username + '.');
+  } else {
+    // console.log('Unfortunate, ' + username + '.');
+    alert('Unfortunate, ' + username + '.');
+  }
 }
+questionFive();
 
 // ^^^ Display the user’s name back to them in your final message
 
