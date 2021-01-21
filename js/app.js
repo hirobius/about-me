@@ -62,20 +62,22 @@ function questionThree() {
 }
 questionThree();
 
-var quizFour = prompt('Am I a gamer?').toUpperCase();
+function questionFour() {
+  var quizFour = prompt('Am I a gamer?').toUpperCase();
 
-if (quizFour === 'YES' || quizFour === 'Y') {
-  // console.log('I feel it...');
-  alert('+10,000 EXP');
-  score++;
-} else if (quizFour === 'NO' || quizFour === 'N') {
-  // console.log('Dude. Get with it.');
-  alert('Dude. Get with it.');
-} else {
-  // console.log('Moving on..);
-  alert('Moving on..');
+  if (quizFour === 'YES' || quizFour === 'Y') {
+    // console.log('I feel it...');
+    alert('+10,000 EXP');
+    score++;
+  } else if (quizFour === 'NO' || quizFour === 'N') {
+    // console.log('Dude. Get with it.');
+    alert('Dude. Get with it.');
+  } else {
+    // console.log('Moving on..);
+    alert('Moving on..');
+  }
 }
-
+questionFour();
 
 var quizFive = prompt('Am I into politics?').toUpperCase();
 
