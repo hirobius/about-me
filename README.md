@@ -1,8 +1,10 @@
 # about-me
 
-This is username: hirobius and I am adding these new features to my About me:
+My name is Adrian and this is a little bit about me.
 
-• My Top Ten items on my Read / Watch List as an Ordered List
-• My Work History and Education summary as an unordered list in HTML
-
-I also have a series of feedback responses that will help the user / viewer learn some more about me!
+It includes:
+• A bio section
+• My education history
+• My work history
+• A short quiz to give info about me
+• The Top Ten items on my Read / Watch List as an Ordered List
